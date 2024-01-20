@@ -1,0 +1,20 @@
+let arr = [];
+for (let i = 1; i <= 100; i++) {
+    arr.push(i);
+    }
+
+
+
+
+function thirteen (arr) {
+let result = [];
+for (let i = 0; i < arr.length; i++)
+for (let j = i+1; j < arr.length; j++) {
+    let sum = 13;
+    if (arr[i] + arr[j] === sum) {
+    result.push(i,j);
+}
+}
+return result;
+}
+thirteen (arr)
